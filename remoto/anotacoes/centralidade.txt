@@ -1,0 +1,79 @@
+p = val - medio / desvio Pardao (para uma disrtibuição normral)
+
+DIAGRAMA DE PROBBILIDADE NORMAL 
+
+QQPLOT (PLOTA OS GRAFICOS COMPARANDO COM UMA DISTRIBUIÇÃO NORMAL)
+A convergencia de dadosdemonstra uma distribuição normal
+
+Teste de Shapiro-Wilk: quando P é >0,05 nao ha indicios que os dados estaos normalmente distribuidos
+
+____________________________-
+
+TEOREMA CENTRAL DO LIMITE 
+
+conforme o tamanho da amostra aumenta, a distibuiçapo das medias se aproxima cada vez mais da distribuicao normal
+
+independente de como os dados estao distribuidos, as medias estarao normalmente distribuídas
+
+PESQUISAR SOBRE **
+____________________________
+
+ESTATISTICA PARAMÉTRICA
+
+	Requer que os dados estejam em conformidade com alguma distribuição 
+	EX: Distribuição Normal
+
+ESTATISTICA NÃO PARAMÉTRICA: 
+	Usado em casos de excao 
+	modelos de hipóteses nao tao confiaveis como as parametricas
+
+
+Para obter o mesmo resultado para funções que contem aleatoriedade, utilizamos: set.seed(<inteiro qualquer>)
+
+Exemplo com sample:
+	set.seed(2497)
+	sample(1000, 1)
+Pacote SAMPLING: utilizado para trabalho om amostragem em diversas formas diferentes
+
+_______________________________________
+
+CENTRALIDADE E VARIABILIDADE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

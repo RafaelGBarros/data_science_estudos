@@ -1,0 +1,11 @@
+T de Student
+
+Utilizada quando a amostra e pequena e não se conhece a distribuição (é não normal)
+Não se conhece o desvio padrão
+
+
+grau de liberdade = (n-1)
+
+
+
+

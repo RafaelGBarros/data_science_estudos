@@ -1,0 +1,17 @@
+SERIES TEMPORAIS COM ARIMA
+
+Arima:
+	Robusto e amplamente utilizado no meio de dados
+	Requere dados estacionários
+	Não sendo estacionários, transforma usando diferenciação: remocao de tendencia
+
+Composto por 3 elementos
+
+AR:
+	Autoregressivo: Avalia a relação entre períodos
+	Possui autocorrelação
+I:
+	Integrated: Aplica diferenciação (caso necessario)
+MA:
+	Moving Avarage: Avalia e extrai erros entre períodos
+

@@ -1,0 +1,100 @@
+TRATAMENTO DE DADOS:
+
+No momento da importacao, ja podemos passar alguns parametros de tratamento
+
+dados = read.csv("dados.csv", sep = ";", na.strings="", stringAsFactors=T)
+	Neste caso, estamos transformando tudo que for vazio com "NA", oq nos tras vantagens
+	"StringAsFactore=T" para tratas Strings simples como tipo Factor
+
+posso atribuir nome as colunas com a funcao "colnames" Passando os nomes como um vetor, indicado
+por " c("item1","item2","item3") "
+	colnames(dados) = c("ID","NOME","SENHA","EMAIL")
+
+PROCESSO DE ANALISE EXPLORATORIA:
+identificando detalhes de dados categoricos:
+
+no exemplo, plotar dois graficos de barra, ambos com a informacao "Quantidade/Caracteristica"
+	counts = table(dados$Estado) # fazendo contagem na coluna "Estado" armazenando em "Counts"
+	barplot(counts, main="Estados", xlab="Estados") 
+	## Na linha acima, plotei o grafico de quantidade / estados
+Com o grafico simples ja e possivel analisar algumas informacoes, insights ou inconsistencias sobre
+o dataFrame analisado;
+
+Importate que os dados estejama 100% padronizados para que nao haja inconsistencia no modelo
+
+** Para acessar uma coluna em um DF, usamosa sintaxe:
+	nomeDF$nomeColuna
+
+** Plotagens basicas ja vistas: 
+	hist(df$coluna)
+	boxplot(df$coluna)
+	barplot(df$coluna) 
+
+** Usar a funcao "summary" pode ajudar a identificar anomalias no DF. 
+Um exemplo: Encontrar no campo "min" uma idade com valor negativo;
+
+** O combo sumamry + boxplot + hist e um bom modo de explorar os dados, inicialmente
+
+______________________
+
+LIMPEZA E TRATAMENTO
+
+E possivel acessar somente colunas e linhas especificas de um DF utilizando []
+	nomeDF[linhas,colunas]
+no exemplo, usamos isso para "filtrar" somente dados incompletos negando uma funcao
+	dados[!complete.cases(dados),] ##Passamos sem o parametro que filtraria colunas
+
+Uma forma usual de lidar com valores numericos faltanes e com utilizacao de mediana
+para tanto, e necessario considerar os faltantes (em R, o retorno sempre sera NA)
+
+por tanto usamos, na funcao "median" o parametro "na.rm = T" (removo valores NA)
+	median(dados$Salrio, na.rm = T)
+
+Agora que tenho o valor usualmente utiliazdo para substituir NAs, devo realizar a operacao
+identifcando os valores NA na coluna com "is.na"
+	dados[is.na(dados$Salario),] = median(dados$Salario, na.rm = T)
+
+Repito a checagem de linhas incompletas para validar a opercao:
+	dados[!complete.cases(dados), ]
+_____________________________________________________________________________
+
+** para valores categorios (com sexo), devemos "resolver" os NAs considerando a "moda", ou seja
+o valor com maior ocorrencia;
+
+no exemplo, fizemos as seguintes substituicoes:
+	dados[is.na(dados$Genero) | dados$Genero == "M", ]$Genero = "Masculino"
+	dados[dados$Genero == "F" | dados$Genero == "Fem", ]$Genero = "Feminino"
+
+** Para remover factors nao utilizados, redefinimos as colunas como factor com:
+	dados$Genero = factor(dados$Genero)
+
+
+______________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

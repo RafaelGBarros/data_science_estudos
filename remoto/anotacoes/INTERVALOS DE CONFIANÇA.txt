@@ -1,0 +1,10 @@
+INTERVALOS DE CONFIANÇA:
+
+nível de confiança:
+	z*
+Existe uma tabela de conversão entre o percentual de confiança e o valor z* (Nivel de Confiança)
+
+a variação dde uma amostra e medida por erros padrão
+	(erro == variabilidade)
+
+com isso, conseguimos obter o intervalo de confiança e a margem de erro 

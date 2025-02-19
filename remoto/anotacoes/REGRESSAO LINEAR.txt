@@ -1,0 +1,101 @@
+REGRESSAO LINEAR
+
+simples: 
+	Uma variável dependente e uma de resposta (idade->custo)
+
+Multipla:
+	Varias variáveis dependentes para uma de resposta (idade, sexo -> custo)
+
+Normalmente, utilizasse o gráfico de dispersão para analisar regressão linear
+
+cada "ponto" no gráfico é uma "linha" completa de uma tabela de regressão
+
+chamasse "regressão linear" por conta de sua característica de linearidade e a opercao executada, uma rereção p/ previsões
+
+__________________________________
+
+Correlação matemática:
+
+
+
+forca e direção entre essas duas variáveis
+
+a força pode ser um valor qualquer entre -1 e 1
+	quanto mais próximo dos extremos, maior a força da correlação
+	1 e -1 são consideradas correlações perfeitas
+	0 indica não relação
+	0,7 e -0,7 indica relação forte
+A direção da correlação se da por:
+	negativa: direção a esquerda
+	positiva: direção a direita
+
+graficamente conseguimos ter nocao da forca e direção da correlação. A linearidade padrão dos dados é observada com relativa facilidade
+
+Definimos a linearidade com base na intersecção (valor da linha de tendencix no eixo x) e a inclinação da linha. Com esses dados conseguimos inferir com certo nível de confiança valores desconhecidos dentro de um plano 
+
+a ideia de previsão dentro do conceito de regressão linear se da por:
+	previsão = intersecção + (inclinação * Valor a Prever)
+
+Uma linha que responde a 100% ou quase isso dos pontos (no gráfico, passa por cima de todos ou quase todos os pontos), pode indicar super ajuste (perde a característica de generalismo, passar a se condicionado aos dados utilizados)
+
+As previsões são norteadas pela linha, não pelos pontos
+
+Coeficiente de determinação = R^2
+
+Outliers: analisa-se caso a caso para garantir qual a melhor forma de trata-los
+
+extrapolação: Dados fora do mínimo e máximo observável:
+	
+___________________________________
+
+ETAPAS NECESSARIAS: 
+
+Correlação > Inclinação > Interceptação > Previsão
+
+___________________________________
+
+CALCULOS:
+a COVARIANCA é dada por:
+	cov(x,y) = 1/n som(n, i=1)(Xi - X|)
+	
+	
+
+A Relação é dada através do calculo de covariância:
+	Relação matemática entre duas variáveis
+	Pearason -> r = cov(x,y)/raiz(var(x).var(y))
+
+A inclinação é dada por: m = r(Sy / Sx)
+	Onde:
+		r é a correlação
+		S é o Desvio padrão
+
+A interceptação é dada por: b = y| - mx|
+	onde:
+		y| = média de y
+		x| = média de x
+		m = Resultado esperado (correlação)
+
+A previsão será dada por:
+	P = b + (m * v)
+	onde:
+		b = interceptação
+		m = inclinação
+		v = variável independente
+
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

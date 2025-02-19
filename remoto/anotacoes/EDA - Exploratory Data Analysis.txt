@@ -1,0 +1,53 @@
+EDA - Exploratory Data Analysis
+
+obter informações ocultas sobre dados
+
+Trata das informações:
+	variação
+	anomalias
+	distribuição de dados
+	tendencias
+	padrões
+	relações
+
+AMOSTRAGEM:
+
+Parte de uma população, obtida através de critérios que garantam que qualquer um pode ser 
+selecionado
+
+Amostra: subconjunto de população total obrigatoriamente;
+caso se utilize de todo o conjunto/população, trabalhamos agora com a ideia de CENSO
+
+A amostra deve representar corretamente as características do conjunto
+Caso contrario, a amostra será enviesada
+
+
+TIPOS DE AMOSTRAS: ALEATORIA SIMPLES / ESTRATIFICADA / SISTEMATICA
+
+ALEATORIA SIMPLES: 
+	Os candidatos são selecionados aleatoriamente
+	Dividida em "com reposicao" e "sem reposicao"
+	Com Reposição: Candidatos selecionados voltam para a população elegível pós coleta
+	Sem Reposição: Os candidados não voltam a população elegível 
+ESTRATIFICADAS:
+	Considera possíveis estratos - Características que possam dividir em subconjuntos (raça, sexo e etc)
+	A seleção deve ser proporcional considerando esses subconjuntos
+SISTEMATICAS:
+	Exemplo: A cada 1 escolhido, o próximo elemento é escolhido após n elementos pulados
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

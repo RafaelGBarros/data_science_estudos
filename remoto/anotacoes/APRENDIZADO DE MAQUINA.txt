@@ -1,0 +1,105 @@
+APRENDIZADO DE MAQUINA
+
+maquinas podem aprender
+o aprendizado é continuo e mensurável
+existem limitações para o aprendizado 
+memoria, processamento e armazenamento são exemplo de limites 
+Limites lógicos: os algoritmos utilizados 
+Os dados correlacionados também podem ser exemplos de limite (a coleta dos mesmo e problemas correlatos)
+
+modelos são de alta preformnce, porem, dificilmente ou nunca serão de 100% na vida real
+
+De modo geral, chamamos características de uma tabela de "atributots" ou "dimensões"
+As linhas são instancias coletadas
+O conjunto de dados é chamado de relação
+em machine learning  temos dados:
+	Nominais: 
+	Numéricas:
+
+Conceito de Tarefas: 
+	classificação: quando quero prever algo que seja categórico
+	Regressão: prver um numero com base em uma série de dados
+	Agrupamentos: agrupamento de características (clusterização)(não supervisionada)
+	Regras de Associação: características que possibilitam associação entre diferentes grupos
+
+Superviosionada:
+	existe uma classe/rotulo par analise posterior e medição
+NãoSupervisionado:
+	apenas serve para agrupar sem analisar classe e etc;
+
+________________________________
+
+amtriz de confusão:
+cruza as diferenças entre acertos e erro do modelo
+Ou seja, nas colunas temos a classificação gerada e nas linhas, os dados, de fato 
+a interseção mostra a relação modelo/dados
+
+A tabela de confusão produz:
+verdadeiros positivos: modelo previu como verdade e se concretizou
+Verdadeiros negativos: modelo previu positivo, porem, os dados indicam negativo
+O mesmo para os falsos
+
+GENERALIZAO / SUPER AJUSTE / SUB AJUSTE
+
+Criar modelos que sirvam o mundo real
+super ajustado fica enviesado pelos dados do treinamento e não servem em dados diferentes
+sub ajustados  não conseguem boas taxas de previsão, logo, não consegue capturar as características determinantes
+O objetivo, então, é que o modelo seja genérico e auto ajustável aos dados relativos diversos
+
+CLASSES RARAS:
+No caso de transações, fraudes são exemplos;
+sem o tratamento o modelo pode ignorar classes raras e trata de forma genérica
+estratificasse os dados afim de "ensinar" o modelo como agir com essa situações
+
+____________________________________________________
+
+TIPOS DE ALGORITMOS DE CLASSIFICAÇÃO
+
+Arvores de Decisão:
+	baseado, basicamente em uma arvore padrão
+	existem técnicas para definição de grau de pureza e precisao
+	
+Naive Bayes:
+	Teoria da probabilidade que supõe que os atributos influenciarão a classe de forma independente
+
+	ou seja: quando temos mais de um atributo determinante, temos que analisa-los um a um a primeiro momento e, posteriormente unir aos outro resultados
+
+REDE BAYESIANA:
+	Segue os princípios de bayese
+	Nesse caso, pode mostrar dependência entre atributos através de probabilidade condicional
+	
+__________________________________________
+
+MAUQINA DE VETOR DE SUPORTE
+
+cria vetores de suporte que são utilizados para gerar a divisão dos dados 
+graficamente, delimita os dados em suas distribuições e distinções de forma otimizada
+
+
+______________________________________________
+
+Dimensionamento de Características
+
+Processo de transformação de dados numéricos
+
+variáveis em escalas diferentes:
+	Contribuiem de forma balanceada no modelo 
+	Ex.: Salario e altura
+Duas principais técnicas de dimensionamento:
+	Padronização: Z-score
+	Normalização: Min-Max
+
+APDRONIZAÇÃO:
+	Dados são aproximados a média 0 e desvio padrão = 1
+	Podem Ser negativos
+	Não afeta Outlierrs
+	Usado na maioria dos casos
+	Mesma formula da dist normal (z) Xp = x-u/o
+
+NORMALIZAÇÃO:
+
+Limita os dados a 0 a 1 
+Obrigatoriamente positivos
+Usado quando não sabemos a distribuião dos dados
+Remove Outliers
+

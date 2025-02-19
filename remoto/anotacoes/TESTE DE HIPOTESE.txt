@@ -1,0 +1,38 @@
+TESTE DE HIPOTESE
+
+trabalho com amostra - trabalahndo com populacao, temos o valor, de fato
+H0 = hipotese nula - Aalegacao que se quer testar
+
+Presumimos de H0 e verdadeira, a nao ser que haja evidencia de sua negacao
+	H0: u = 100
+
+Ha seria a Hipotese alternativa aquilo que se espera provar
+
+ALFA E VALOR -P 
+
+nives alfa (infinito nao fechado):
+	0.05
+	0.01
+para o valor-p:
+	Se (valor-p >= alfa ) => Nao rejeita H0
+	Se (valor-p < alfa ) => Rejeita H0
+	No caso de uma valor-p for muito proxmo, o modelo e inconclisivo
+
+ETAPAS DE UM TESTE DE HIPOTESE:
+
+1- Definir tamnho da amostra
+2- Coletar os dados
+3- Calcular a media e o desvio padrao 
+4- Definir as duas hipoteses H0 e Ha
+5- Definir o valorde alfa
+6- Encontrar valor-p e comprar com o alfa
+7- emite veredito
+
+
+TESTE DE HIPOTESE POR MEDIA:
+
+enunciado: Estudo afirma que criancas de 6 anos pesam menos de 22kg
+
+Hipoteses: 
+	H0= u = 22   ##Hipotese ja exisente, uma informacao, em teoria, previmente ja demostrada
+	Ha= u > 22   ##Nova Hipose que desejo provar

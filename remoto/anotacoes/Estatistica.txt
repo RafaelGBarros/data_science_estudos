@@ -1,0 +1,21 @@
+Estatistica:
+
+É uma ciencia que utiliza das teorias probabilisticas para explicar a frequencia da ocorrencia de eventos
+
+Dividida em: 
+Descritiva: organizar, demonstrar e resumir
+Probabilistica: analise de situacoes sujeitas ao acaso
+Inferencia: Obter resposta sobre um fenomeno atraves de dados representativos
+
+
+Em estatistica, temos duas familias de variaveis:
+QUANTITATIVAS X QUALITATIVAS
+
+QUANTITATIVAS - NUMERICAS
+	Continuas: Valores reais e que podem assumir qualquer intervalo
+	Discretas: Numeros fixos, inteiro e num intervalor definido
+
+QUALITATIVAS: 
+	Nominais: Categorias sem hierarquias
+	Ordinais: Categorias com hierarquias 
+	
